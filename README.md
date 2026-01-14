@@ -15,7 +15,7 @@ Extracts:
 - Description
 - Image
 - Price
-- Stock status
+
 
 **Stores all products in a MySQL database**
 
@@ -42,13 +42,16 @@ Extracts:
 ```
 app/
  ├── Models/Product.php
+ ├── Models/Image.php
  ├── Console/Commands/ScrapeProducts.php
- ├── Http/Controllers/ProductController.php
+ ├── Jobs/ImportProductJob.php
+ ├── Service/ServiceCrawler.php
 resources/
  ├── views/products.blade.php
  ├── views/components/layouts/app.blade.php
 database/
  ├── migrations/create_products_table.php
+ ├── migrations/create_images_table.php
 routes/
  ├── web.php
 ```
